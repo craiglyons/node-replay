@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      "replay@~1.12.0",
+      "/Users/craiglyons/projects/ovee"
+    ]
+  ],
+  "_from": "replay@>=1.12.0 <1.13.0",
+  "_id": "replay@1.12.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/replay",
+  "_nodeVersion": "0.10.33",
+  "_npmUser": {
+    "email": "assaf@labnotes.org",
+    "name": "assaf"
+  },
+  "_npmVersion": "2.1.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "replay",
+    "raw": "replay@~1.12.0",
+    "rawSpec": "~1.12.0",
+    "scope": null,
+    "spec": ">=1.12.0 <1.13.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/replay/-/replay-1.12.0.tgz",
+  "_shasum": "01ca3cdc97411e9986745ea417e86a956eb0ae73",
+  "_shrinkwrap": null,
+  "_spec": "replay@~1.12.0",
+  "_where": "/Users/craiglyons/projects/ovee",
+  "author": {
+    "email": "assaf@labnotes.org",
+    "name": "Assaf Arkin",
+    "url": "http://labnotes.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/assaf/node-replay/issues"
+  },
+  "dependencies": {
+    "js-string-escape": "~1.0.0"
+  },
+  "description": "When API testing slows you down: record and replay HTTP responses like a boss",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "body-parser": "^1.9.2",
+    "coffee-script": "1.8.0",
+    "express": "^4.10.2",
+    "mocha": "^2.0.1",
+    "request": "^2.47.0"
+  },
+  "directories": {
+    "doc": "./doc",
+    "lib": "./lib"
+  },
+  "dist": {
+    "shasum": "01ca3cdc97411e9986745ea417e86a956eb0ae73",
+    "tarball": "http://registry.npmjs.org/replay/-/replay-1.12.0.tgz"
+  },
+  "gitHead": "585da76d581926c7f9b92345832714e3ed96d07b",
+  "homepage": "https://github.com/assaf/node-replay",
+  "keywords": [
+    "api",
+    "http",
+    "mock",
+    "replay",
+    "stub",
+    "test",
+    "testing",
+    "vcr"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/assaf/node-replay/blob/master/MIT-LICENSE"
+    }
+  ],
+  "main": "./lib/replay",
+  "maintainers": [
+    {
+      "name": "assaf",
+      "email": "assaf@labnotes.org"
+    }
+  ],
+  "name": "replay",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assaf/node-replay.git"
+  },
+  "scripts": {
+    "build": "coffee --bare --compile --output lib/replay src/replay/*.coffee",
+    "postpublish": "rm -rf lib",
+    "prepublish": "coffee --bare --compile --output lib/replay src/replay/*.coffee",
+    "test": "mocha"
+  },
+  "version": "1.12.0"
+}
